@@ -49,9 +49,24 @@ Explore Repositories: https://github.com/SonjayLake/Gym-App/blob/main/README.md
 Similar GitHub README: It starts with a demo video of the app. The it explains how to use the app in detail. It follows by sharing what the application was built within each aspect such as front-end and back-end. The author explains what they learned. They end by mentioning future development plans, other useful resources, and closes by putting the author’s name and LinkedIn information. 			 
 
 AI Thoughts:  
+I used ChatGPT for some trouble shooting when it came to getting my html code compatible with the proper css code. I needed to make classes in html and then site it in css. I need definitely some more practice with css and combining it with html. This is the prompt I used. I also used w3schools. 
+<!DOCTYPE html>
 
-Fortunately, my page was a simple enough part of the overall website that I didn’t need to consult ChatGPT, however I used websites like Stack Overflow and especially W3 schools several times.  
+<html>
+<head>
+    <title>Contact Us</title>
+</head>
+<body>
+    <p>Please provide your email address.</p>
+    <form>
+        <label for="email">Email Address:</label><br>
 
+        <input type="email" id="email" name="email"><br />
+
+    </form>
+
+</body>
+What's wrong with this code for a website. 
 
 
 
