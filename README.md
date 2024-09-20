@@ -31,6 +31,17 @@ CHATGPT integration
 I used ChatGPT for this assignment mostly for some troubleshooting purposes because it's easier than searching through mountains of Stack questions. For example, I could not for the life of me get text to overlay on an image and people on Stack were zero help or just didn't work for me and ChatGPT got it first try (It's pretty good at CSS).
 I used StackOverflow, and W3schools as well.
 
+**DaltonKnippel**
+
+Contribuitions: Workouts page and navbar integration 
+
+*Similar Website: https://www.kalimusclefitness.pro/
+*Not exactly the same thing, but the site uses HTML and Javascript. The iPhones shown on screen are just from a linked image source but it's a different video element inside it. The page also has input in javescript for the end user to fill out to send a request for sign up.
+
+
+Similar GitHub:  https://github.com/itsindrajput/stargymhub
+This project is very similar to ours. It functions like a hub for all information about fitness. It utilizes all the concepts covered from the first few weeks of class pertaining to CSS, javascript, and HTML. Some useful code snippets would be their button tag from their product page. It has a funtion to open a registration form. Also, how they comment for the code neatly describes what part of the page's code you are looking at. 
+
 
 **DavisonWalter**
 
@@ -49,11 +60,33 @@ Explore Repositories: https://github.com/SonjayLake/Gym-App/blob/main/README.md
 Similar GitHub README: It starts with a demo video of the app. The it explains how to use the app in detail. It follows by sharing what the application was built within each aspect such as front-end and back-end. The author explains what they learned. They end by mentioning future development plans, other useful resources, and closes by putting the author’s name and LinkedIn information. 			 
 
 AI Thoughts:  
+I used ChatGPT for some trouble shooting when it came to getting my html code compatible with the proper css code. I needed to make classes in html and then site it in css. I need definitely some more practice with css and combining it with html. This is the prompt I used. I also used w3schools. 
+<!DOCTYPE html>
 
-Fortunately, my page was a simple enough part of the overall website that I didn’t need to consult ChatGPT, however I used websites like Stack Overflow and especially W3 schools several times.  
+<html>
+<head>
+    <title>Contact Us</title>
+</head>
+<body>
+    <p>Please provide your email address.</p>
+    <form>
+        <label for="email">Email Address:</label><br>
+
+        <input type="email" id="email" name="email"><br />
+
+    </form>
+
+</body>
+What's wrong with this code for a website. 
+
+
 
 
 **Joshua Morrison**
+
+Contributions: Did the About Us page in the website and worked on the layout for the website to make sure the nav bar worked correctly. 
+
+
 Competitive Analysis: 
 
 The Website I picked to compare to was https://www.crunch.com/about 
@@ -62,4 +95,10 @@ The first thing I noticed that stood out was the pictures on the website of peop
 
 
 The GitHub I picked is https://github.com/WaleedAshraf/bsef12m538MusicBOX/blob/e4e0745f415d1f2a502f169d2e48f5caba2e4be2/Views/User/aboutUs.cshtml#L4 
+
+I looked at his github and I was planning on using the thumbnail for the image in the about us section. I realized that I can use it for the table as well but I did not like what it looked like. I was interested in this because I realized it is a way to look at images with a better view of them. 
+
+
+
+Didn't use Chatgpt only W3 schools.
 
