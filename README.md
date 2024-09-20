@@ -53,7 +53,14 @@ AI Thoughts:
 Fortunately, my page was a simple enough part of the overall website that I didn’t need to consult ChatGPT, however I used websites like Stack Overflow and especially W3 schools several times.  
 
 
+
+
+
 **Joshua Morrison**
+
+Contributions: Did the About Us page in the website and worked on the layout for the website to make sure the nav bar worked correctly. 
+
+
 Competitive Analysis: 
 
 The Website I picked to compare to was https://www.crunch.com/about 
@@ -62,4 +69,10 @@ The first thing I noticed that stood out was the pictures on the website of peop
 
 
 The GitHub I picked is https://github.com/WaleedAshraf/bsef12m538MusicBOX/blob/e4e0745f415d1f2a502f169d2e48f5caba2e4be2/Views/User/aboutUs.cshtml#L4 
+
+I looked at his github and I was planning on using the thumbnail for the image in the about us section. I realized that I can use it for the table as well but I did not like what it looked like. I was interested in this because I realized it is a way to look at images with a better view of them. 
+
+
+
+Didn't use Chatgpt only W3 schools.
 
