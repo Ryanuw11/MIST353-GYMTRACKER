@@ -30,3 +30,24 @@ CHATGPT integration
 
 I used ChatGPT for this assignment mostly for some troubleshooting purposes because it's easier than searching through mountains of Stack questions. For example, I could not for the life of me get text to overlay on an image and people on Stack were zero help or just didn't work for me and ChatGPT got it first try (It's pretty good at CSS).
 I used StackOverflow, and W3schools as well.
+
+
+**DavisonWalter**
+
+ 
+
+Competitive Analysis:  
+
+• Similar Website: https://www.gymstreak.com/  
+
+Our selected web app idea is a workout app, so I researched an app and website called GymStreak. The website looks well-designed but offers only the most basic but necessary options and selections including a blog section, contact us page, help center, terms of use, and privacy policy. There are also links to download the app on the page. The site’s coding uses html 5. It begins with comments that say where it was created and when it was last published. It continues with the design of the website.  
+
+GitHub Repository Research:  
+
+Explore Repositories: https://github.com/SonjayLake/Gym-App/blob/main/README.md 
+
+Similar GitHub README: It starts with a demo video of the app. The it explains how to use the app in detail. It follows by sharing what the application was built within each aspect such as front-end and back-end. The author explains what they learned. They end by mentioning future development plans, other useful resources, and closes by putting the author’s name and LinkedIn information. 			 
+
+AI Thoughts:  
+
+Fortunately, my page was a simple enough part of the overall website that I didn’t need to consult ChatGPT, however I used websites like Stack Overflow and especially W3 schools several times.  
