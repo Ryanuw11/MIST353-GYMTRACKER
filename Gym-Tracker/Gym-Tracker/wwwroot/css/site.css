@@ -55,3 +55,14 @@ body {
 .btn {
     margin-top: 50px;
 }
+.title {
+    color:black;
+    font-size:20px;
+}
+.email {
+    color:black;
+    font-size: 35px;
+}
+.Enter {
+    margin-top: 20px;
+}
