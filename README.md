@@ -51,3 +51,15 @@ Similar GitHub README: It starts with a demo video of the app. The it explains h
 AI Thoughts:  
 
 Fortunately, my page was a simple enough part of the overall website that I didn’t need to consult ChatGPT, however I used websites like Stack Overflow and especially W3 schools several times.  
+
+
+**Joshua Morrison**
+Competitive Analysis: 
+
+The Website I picked to compare to was https://www.crunch.com/about 
+
+The first thing I noticed that stood out was the pictures on the website of people working out. The website’s UI was very appealing to the user’s eye. In the about page, they also had a YouTube video attached to the website. When I looked in the inspect over half the code was just to track cookies and keep information. They would use <iframe id=> to track information. When I looked at the about It offered information about locations, membership cost, and what the gym provides. They organize the sections well with a space just for what each membership provides.
+
+
+The GitHub I picked is https://github.com/WaleedAshraf/bsef12m538MusicBOX/blob/e4e0745f415d1f2a502f169d2e48f5caba2e4be2/Views/User/aboutUs.cshtml#L4 
+
