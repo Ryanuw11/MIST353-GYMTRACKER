@@ -57,6 +57,10 @@ Fortunately, my page was a simple enough part of the overall website that I didn
 
 
 **Joshua Morrison**
+
+Contributions: Did the About Us page in the website and worked on the layout for the website to make sure the nav bar worked correctly. 
+
+
 Competitive Analysis: 
 
 The Website I picked to compare to was https://www.crunch.com/about 
