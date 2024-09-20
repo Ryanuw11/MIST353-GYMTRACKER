@@ -33,6 +33,8 @@ I used StackOverflow, and W3schools as well.
 
 **DaltonKnippel**
 
+Contribuitions: Workouts page and navbar integration 
+
 *Similar Website: https://www.kalimusclefitness.pro/
 *Not exactly the same thing, but the site uses HTML and Javascript. The iPhones shown on screen are just from a linked image source but it's a different video element inside it. The page also has input in javescript for the end user to fill out to send a request for sign up.
 
