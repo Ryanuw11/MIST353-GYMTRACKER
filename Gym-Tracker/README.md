@@ -31,7 +31,7 @@ Contribuitions: Workouts page and navbar integration
 Similar GitHub: https://github.com/itsindrajput/stargymhub This project is very similar to ours. It functions like a hub for all information about fitness. It utilizes all the concepts covered from the first few weeks of class pertaining to CSS, javascript, and HTML. Some useful code snippets would be their button tag from their product page. It has a funtion to open a registration form. Also, how they comment for the code neatly describes what part of the page's code you are looking at.
 
 DavisonWalter
-
+Contributions: I created the contact us page. 
 Competitive Analysis:
 
 • Similar Website: https://www.gymstreak.com/
