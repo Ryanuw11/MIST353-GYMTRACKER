@@ -1,4 +1,4 @@
-CREATE TABLE [ext_gym_org] (
+CREATE TABLEc (
 	[id] int PRIMARY KEY IDENTITY(1, 1),
 	[gym_name] nvarchar(255) UNIQUE NOT NULL,
 	[gym_city] nvarchar(255) NOT NULL,
@@ -22,5 +22,7 @@ CREATE TABLE [ext_user_data] (
 CREATE TABLE Membership (
 MembershipLevel Varchar(8) NOT NULL,
 MembershipPrice int NOT NULL,
-)
+ID int,
+FOREIGN KEY ([id]) REFERENCES  [ext_gym_org]([id])
+);
 GO
