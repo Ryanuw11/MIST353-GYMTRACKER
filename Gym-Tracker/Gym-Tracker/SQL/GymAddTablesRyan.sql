@@ -1,4 +1,4 @@
-CREATE TABLEc (
+CREATE TABLE [ext_gym_org]  (
 	[id] int PRIMARY KEY IDENTITY(1, 1),
 	[gym_name] nvarchar(255) UNIQUE NOT NULL,
 	[gym_city] nvarchar(255) NOT NULL,
