@@ -18,3 +18,9 @@ CREATE TABLE [ext_user_data] (
 	[user_level] nvarchar(255) NOT NULL
 	)
 	GO
+
+CREATE TABLE Membership (
+MembershipLevel Varchar(8) NOT NULL,
+MembershipPrice int NOT NULL,
+)
+GO
