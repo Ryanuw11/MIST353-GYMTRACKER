@@ -32,6 +32,7 @@ BEGIN
 	FROM ext_exercise_apperal
 END
 GO
-
+/*
 exec spApperalGetAll
 GO
+*/
