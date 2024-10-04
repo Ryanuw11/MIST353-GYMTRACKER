@@ -20,9 +20,9 @@ CREATE TABLE [ext_user_data] (
 	GO
 
 CREATE TABLE Membership (
-MembershipLevel Varchar(8) NOT NULL,
-MembershipPrice int NOT NULL,
-ID int,
-FOREIGN KEY ([id]) REFERENCES  [ext_gym_org]([id])
+    ID int NOT NULL PRIMARY KEY,
+    MembershipLevel varchar(8) NOT NULL,
+    MembershipMonthPrice Decimal(10,2),
+    MembershipMonthLength int
 );
 GO
