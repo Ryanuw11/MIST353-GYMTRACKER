@@ -34,3 +34,22 @@ CREATE TABLE Membership (
     MembershipMonthLength int
 );
 GO
+
+
+-- Courses avalible on the app that are home workouts with professional Trainers for a price. 
+
+CREATE TABLE Course
+(
+CID int NOT NULL PRIMARY KEY,
+CourseName varchar(50) NOT NULL,
+LengthMinutes int NOT NULL, 
+TrainerFirstName varchar(50) NOT NULL,
+TrainerLastName varchar(50) NOT NULL,
+ClassPrice Decimal(6,2) NOT NULL,
+);
+
+GO
+
+
+
+

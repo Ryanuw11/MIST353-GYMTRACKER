@@ -40,3 +40,19 @@ VALUES
 
 
 GO
+
+-- Classes that are avalible online
+INSERT INTO Course (CID,CourseName,LengthMinutes,TrainerFirstName,TrainerLastName,ClassPrice)
+
+
+VALUES
+('1','Jogging','60','Johnny','Gomes','2.99'),
+('2','Arms','30','Ava','Smith','1.99'),
+('3','Pull Up','15','Joey','Johnson','12.99'),
+('4','Bench','10','Mila','Mighty','1.99'),
+('5','Boxing','30','Mike','Tyson','24.99'),
+('6','MMA','90','Jon','Jones','249.99'),
+('7','Sprinting','45','Jose','Altuve','12.99'),
+('8','StairMaster','5','Spongebob','Squarepants','0.99');
+
+GO
