@@ -34,3 +34,8 @@ CREATE TABLE [ext_exercise_apperal](
 	[apperal_exercise] int NOT NULL,
 	)
 GO
+
+--Davison's Contribution:
+I worked on the 'Contact Us' tables with names and emails. 
+I didn't use ChatGPT, but I did use w3schools and the lecture videos quite a bit. 
+
