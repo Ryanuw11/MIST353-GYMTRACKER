@@ -1,4 +1,7 @@
-CREATE TABLE [ext_gym_org]  (
+
+
+--This creates the table for the gyms location with its name, city, and hours of operation
+CREATE TABLE [ext_gym_org] (
 	[id] int PRIMARY KEY IDENTITY(1, 1),
 	[gym_name] nvarchar(255) UNIQUE NOT NULL,
 	[gym_city] nvarchar(255) NOT NULL,
@@ -7,6 +10,9 @@ CREATE TABLE [ext_gym_org]  (
 	)
 	GO
 
+
+-- This creates the table for the users data which stores basic data about the user along the date the user joined the app.
+-- It also tracks the users level which corresponds to exp the user gets for using the app
 CREATE TABLE [ext_user_data] (
 	[id] int PRIMARY KEY IDENTITY(1, 1),
 	[user_name] nvarchar(255) NOT NULL,

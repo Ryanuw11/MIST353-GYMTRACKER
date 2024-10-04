@@ -2,6 +2,8 @@ USE GymTrackerDB
 GO
 
 -- These are the inserts for my sample users and gym locations
+
+--Inserts data into the gym_org table
 INSERT INTO [ext_gym_org] (gym_name, gym_city, open_time, close_time) 
 
 VALUES
@@ -10,6 +12,14 @@ VALUES
 ('MuscleForge', 'Nevada',  CAST('8:00' AS TIME),  CAST('17:00' AS TIME)),
 ('ReviveFitness', 'PortLand',  CAST('5:00' AS TIME),  CAST('19:00' AS TIME));
 GO
+
+--Inserts Data into user_data table
+INSERT INTO [ext_user_data] (user_name, user_password, user_email, user_address, user_city, user_joined, user_level)
+
+VALUES
+
+('MVS123', '12234', 'MVS@yahoo.com','122 trailrd','Woodbridge','12-24-22','12'),
+('Toddy12', '221212', 'T12@gmail.com', '1234 duke drive', 'Woodbine', '10-1-24', '2');
 
 -- Insert data into Membership table
 INSERT INTO Membership (ID,MembershipLevel,MembershipMonthPrice,MembershipMonthLength)
