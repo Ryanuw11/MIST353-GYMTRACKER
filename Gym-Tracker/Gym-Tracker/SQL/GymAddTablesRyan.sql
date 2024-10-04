@@ -25,6 +25,8 @@ CREATE TABLE [ext_user_data] (
 	)
 	GO
 
+-- Membership Table created with a primary key and the levels of membership 
+	
 CREATE TABLE Membership (
     ID int NOT NULL PRIMARY KEY,
     MembershipLevel varchar(8) NOT NULL,
