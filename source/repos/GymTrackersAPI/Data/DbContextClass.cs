@@ -1,6 +1,15 @@
-﻿namespace GymTrackersAPI.Data
+﻿using GymTrackersAPI.Entities;
+using Microsoft.EntityFrameworkCore;
+
+
+
+
+namespace GymTrackersAPI.Data
 {
-    public class Class
+    public class DbContextClass : DbContext
     {
+        public DbContextClass(DbContextOptions<DbContextClass> options) : base(options) { }
+
+        public DbSet<UserData> UserData { get; set; }
     }
 }
