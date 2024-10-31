@@ -23,5 +23,6 @@ namespace GymTrackersAPI.Controllers
             return gymDetails;
 
         }
+
     }
 }

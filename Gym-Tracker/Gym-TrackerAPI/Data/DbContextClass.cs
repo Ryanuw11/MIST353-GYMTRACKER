@@ -14,5 +14,7 @@ namespace GymTrackersAPI.Data
         public DbContextClass(DbContextOptions<DbContextClass> options) : base(options) { }
 
         public DbSet<UserData> UserData { get; set; }
+
+        public DbSet<GymLoc> GymLoc { get; set; }
     }
 }

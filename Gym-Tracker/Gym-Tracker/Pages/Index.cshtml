@@ -9,35 +9,23 @@
 
 <div class="container">
     <img src="https://th.bing.com/th/id/OIP.Zfr9QoLyjB3Cbv6PB7mMOgHaE8?w=242&h=180&c=7&r=0&o=5&pid=1.7" />
-    <button type="button" class="btn btn-primary">About Us</button>
+    
     <div class="overlay">Welcome to Gym-Tracker</div>
 
 </div>
 
-<section class="customer-section">
-
-    <h1>Stories of our satisfied customers   </h1>
-    <div class="customer-box-container">
+<form id="locationForm" action="/searchResults">
+    <i class="fa-solid fa-location-arrow"></i>
+    <input type="text" id="locInp" name="user" class="form-control" value="Search For a User" />
     
-    <div class="customer box">
+    <input type="submit" id="submitBtn" value="Search" class="btn btn-primary" />
+</form>
+<button id="locBtn" onclick="getLocation()"><i class="fa fa-location-arrow"></i></button>
 
-        <p>
-            "The best app I've ever used!"
-        </p>
-        <h2>
-            Johnny Joestar
-        </h2>
-        </div>
-        <div class="customer box">
+<div id="results">
+</div>
 
-            <p>
-                "It was cool I guess"
-            </p>
-            <h2>
-                Jotaro Joestar
-            </h2>
-    
-    </div>
-    </div>
 
-</section>
+<script type="module">
+    addLocationFormListen()
+</script>

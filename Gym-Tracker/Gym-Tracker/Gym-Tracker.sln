@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gym-TrackerDKAPI", "..\Gym-
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gym-TrackerJMAPI", "..\Gym-TrackerJMAPI\Gym-TrackerJMAPI.csproj", "{EFD4F3B4-FBB1-4701-85BD-CE6134F3D10C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gym-TrackerAPI", "..\Gym-TrackerAPI\Gym-TrackerAPI.csproj", "{C8AA38A0-07EB-42C4-AF92-40C31A67469E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gym-TrackerAPI", "..\Gym-TrackerAPI\Gym-TrackerAPI.csproj", "{C8AA38A0-07EB-42C4-AF92-40C31A67469E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
