@@ -1,0 +1,6 @@
+@Gym_TrackerJMAPI_HostAddress = http://localhost:5127
+
+GET {{Gym_TrackerJMAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
