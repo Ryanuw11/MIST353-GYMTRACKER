@@ -1,29 +1,27 @@
 ﻿using GymTrackersAPI.Repositiories;
 using Microsoft.AspNetCore.Mvc;
 using GymTrackersAPI.Entities;
+using System.Linq.Expressions;
 
 namespace GymTrackersAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class GymController : Controller
+    public class GymController : ControllerBase
     {
-        private readonly IGymMenu gymMenu;
+        private readonly IGymMenu _gymMenu;
         public GymController(IGymMenu gymMenu)
         {
 
-            this.gymMenu = gymMenu;
+            _gymMenu= gymMenu;
         }
         [HttpGet("{id}")]
 
-        public async Task<List<UserData>> GetUserDatas(int id)
+        public async Task<ActionResult<List<UserData>>> GetUserDatas(int id)
         {
-        var gymDetails = await gymMenu.GymGetDetails(id);
-        if (gymDetails == null)
-            {
-               //return NotFound();
-            }
+            var gymDetails = await _gymMenu.GymGetDetails(id);
             return gymDetails;
+
         }
     }
 }

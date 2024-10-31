@@ -1,40 +1,38 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace GymTrackersAPI.Entities
 {
     public class UserData
     {
-       
 
 
 
-    
-        [Key]
+
+
+        [Column("id")]
         public int Id { get; set; }
 
-        [Required]
-        [StringLength(50)]
-        public string UserName { get; set; }
+        [Column("user_name")]
+        public string? UserName { get; set; }
 
-        [Required]
-        [StringLength(100)]
-        public string UserPassword { get; set; }
+        [Column("user_password")]
+        public int UserPassword { get; set; }
 
-        [Required]
-        [EmailAddress]
-        [StringLength(100)]
-        public string UserEmail { get; set; }
+        [Column("user_email")]
+        public string? UserEmail { get; set; }
 
-        [StringLength(200)]
-        public string UserAddress { get; set; }
+        [Column("user_address")]
+        public string? UserAddress { get; set; }
 
-        [StringLength(100)]
-        public string UserCity { get; set; }
+        [Column("user_city")]
+        public string? UserCity { get; set; }
 
-        public DateTime UserJoined { get; set; } = DateTime.UtcNow; 
+        [Column("user_joined")]
+        public DateTime? UserJoined { get; set; }
 
-        [Range(1, 10)] 
-        public int UserLevel { get; set; }
+        [Column("user_level")]
+        public string? UserLevel { get; set; }
     }
 }
 
