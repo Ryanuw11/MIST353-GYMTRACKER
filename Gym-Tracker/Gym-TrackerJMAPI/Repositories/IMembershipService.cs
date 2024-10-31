@@ -1,8 +1,10 @@
 ﻿using Gym_TrackerJMAPI.Entities;
+
 namespace GymTrackersAPI.Repositiories
 {
     public interface IMembershipService
     {
-        public Task<List<Membership>> MembershipGetAll(int apperal_id);
+        public Task<List<Membership>> MembershipLevelLength(int Membership_ID);
+        Task<List<Membership>> MembershipLevelLength(string membershipLevel);
     }
 }

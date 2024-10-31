@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
+
 namespace Gym_TrackerJMAPI.Entities
 {
     public class Membership

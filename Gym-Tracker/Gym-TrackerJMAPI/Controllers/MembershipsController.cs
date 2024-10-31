@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Gym_TrackerJMAPI.Entities;
+using GymTrackersAPI.Repositiories;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Gym_TrackerJMAPI.Controllers
@@ -7,16 +9,24 @@ namespace Gym_TrackerJMAPI.Controllers
     [ApiController]
     public class MembershipsController : ControllerBase
     {
-        [HttpGet]
-        public ActionResult MembershipLevels()
+        private readonly IMembershipService MembershipService;
+        public MembershipsController(IMembershipService MembershipService)
         {
-            string[] Membership = { "Bronze", "Silver", "Gold" };
-
-            if (Membership.Length < 0)
-                return NotFound();
-            return Ok(Membership);
-            
-            
-     
+            this.MembershipService = MembershipService;
         }
-    } }
+        //asks for Membership ID
+
+        [HttpGet("{Membership_ID}")]
+        public async Task<List<Membership>> MembershipLevelLength(string MembershipLevel)
+        {
+            var MembershipDetails = await MembershipService.MembershipLevelLength(MembershipLevel);
+            if (MembershipDetails == null)
+            {
+            }
+            return MembershipDetails;
+
+
+        }
+
+    }
+}
