@@ -12,10 +12,10 @@ namespace Gym_TrackerDKAPI.Repositories
         {
             _dbContextClass = dbContextClass;
         }
-        public async Task<List<Apperal>> ApperalGetAll(int apperal_id);
+        public async Task<List<Apperal>> ApperalGetAll(int apperal_id)
         {
             var param = new SqlParameter("@apperal_id", apperal_id);
-            var apperalDetails = await Task.Run(() => _dbContextClass.Apperal.FromSqlRaw("exec spApperalGetAll@apperal_id", param).ToListAsynce());
+            var apperalDetails = await Task.Run(() => _dbContextClass.Apperal.FromSqlRaw("exec spApperalGetAll@apperal_id", param).ToListAsync());
             return apperalDetails;
         }
     }

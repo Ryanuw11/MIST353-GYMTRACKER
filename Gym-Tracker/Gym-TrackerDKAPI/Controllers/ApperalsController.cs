@@ -1,6 +1,7 @@
 ﻿using Gym_TrackerDKAPI.Entities;
 using Gym_TrackerDKAPI.Repositories;
 using Microsoft.AspNetCore.Mvc;
+using System.Linq.Expressions;
 
 namespace Gym_TrackerDKAPI.Controllers
 {
@@ -14,12 +15,12 @@ namespace Gym_TrackerDKAPI.Controllers
             this.apperalService = apperalService;
         }
         [HttpGet("{Apperal_id}")]
-        public async Task<List<Apperal>> ApperalGetAll(int apperal_id);
+        public async Task<List<Apperal>> ApperalGetAll(int apperal_id)
         {
-            var apperalDetails = await ApperalService.ApperalGetAll(apperal_id);
-            if apperalDetails == null)
+            var apperalDetails = await apperalService.ApperalGetAll(apperal_id);
+            if (apperalDetails == null)
             {
-                return NotFound();
+                //return NotFound();
             }
             return apperalDetails;
         
