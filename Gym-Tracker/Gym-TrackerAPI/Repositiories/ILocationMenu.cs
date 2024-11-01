@@ -1,5 +1,5 @@
 ﻿using GymTrackersAPI.Entities;
-namespace Gym_TrackerAPI.Repositiories
+namespace GymTrackersAPI.Repositiories
 {
     public interface ILocationMenu
     {

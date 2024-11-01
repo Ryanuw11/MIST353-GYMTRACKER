@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 
 
-namespace Gym_TrackerAPI.Repositiories
+namespace GymTrackersAPI.Repositiories
 {
 
     public class LocationMenu : ILocationMenu
