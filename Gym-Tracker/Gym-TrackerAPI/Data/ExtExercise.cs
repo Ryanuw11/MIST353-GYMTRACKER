@@ -5,6 +5,7 @@ using System.Collections.Generic;
 
 
 namespace GymTrackersAPI.Data
+    //class to reference the nullible values from the exercise table
 {
     public partial class ExtExercise
     {

@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace GymTrackersAPI.Entities
 {
+    //see README for ChatGPT prompt. Converting MySQL to asp.net
     public class Apperal
     {
         public int ApparelId { get; set; }

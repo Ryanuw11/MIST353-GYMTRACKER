@@ -11,6 +11,7 @@ public class ApperalService : IApperalService
     {
         _dbContextClass = dbContextClass;
     }
+    //this is a method for the user to input the apperal id of what they want to get the details of
     public async Task<List<Apperal>> ApperalGetAll(int apperal_id)
     {
         var param = new SqlParameter("@apperal_id", apperal_id);
