@@ -4,6 +4,8 @@ using GymTrackersAPI.Repositiories;
 using Microsoft.EntityFrameworkCore;
 using System.Data.SqlClient;
 
+//Adding class price to the API
+
 namespace Gym_TrackerJMAPI.Repositories
 {
     //interface for CourseService

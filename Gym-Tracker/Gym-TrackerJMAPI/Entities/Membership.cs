@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
+// Adding what belongs in membership in sql into the API
 
 namespace Gym_TrackerJMAPI.Entities
 {

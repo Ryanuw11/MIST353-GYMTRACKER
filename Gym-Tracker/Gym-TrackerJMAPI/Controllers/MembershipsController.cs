@@ -3,6 +3,7 @@ using GymTrackersAPI.Repositiories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
+//Creating Membership Controller
 namespace Gym_TrackerJMAPI.Controllers
 {
     [Route("api/[controller]")]

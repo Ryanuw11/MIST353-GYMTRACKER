@@ -7,6 +7,8 @@ namespace Gym_TrackerJMAPI.Controllers
 
     [Route("api/[controller]")]
     [ApiController]
+
+    //Adding controller to the Course
     public class CourseController : ControllerBase
     {
         private readonly ICourseService CourseService;
@@ -14,7 +16,7 @@ namespace Gym_TrackerJMAPI.Controllers
         {
             this.CourseService = CourseService;
         }
-        //asks for Membership ID
+        //asks for Class Price
 
         [HttpGet("{ClassPrice}")]
         public async Task<List<Course>> ClassP(int ClassPrice)

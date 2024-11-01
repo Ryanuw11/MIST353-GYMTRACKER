@@ -1,4 +1,5 @@
 ﻿using Gym_TrackerJMAPI.Entities;
+//Course Service Interface
 
 namespace GymTrackersAPI.Repositiories
 {

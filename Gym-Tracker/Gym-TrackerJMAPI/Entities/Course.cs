@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
+// Adding Course information from SQL
 
 namespace Gym_TrackerJMAPI.Entities
 {

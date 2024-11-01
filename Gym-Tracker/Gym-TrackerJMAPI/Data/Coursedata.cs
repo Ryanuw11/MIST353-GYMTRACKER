@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 namespace Gym_TrackerJMAPI.Data
 {
+    //Adding  course data
     public partial class CourseData
     {
         public string CourseName { get; set; } = null!;

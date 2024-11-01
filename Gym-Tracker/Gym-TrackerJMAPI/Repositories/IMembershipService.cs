@@ -1,4 +1,5 @@
 ﻿using Gym_TrackerJMAPI.Entities;
+//Membership Level Length Paramenters 
 
 namespace GymTrackersAPI.Repositiories
 {
