@@ -86,3 +86,53 @@ The user is also going to name the exercise they are sharing. The second API is 
                     public int ApparelExercise { get; set; }
                 }
             }
+
+
+
+     #### Joshua Morrison Work ####
+
+     I created 2 APIS that looked up the class price and looked up the Membership Level of each person. The point was to be able for users to lookup there membership easier and to be able to make it easier. 
+
+     CHAT GPT USE 
+[HttpGet("{Membership_ID}")]
+        public async Task<List<Membership>> MembershipLevelLength(string MembershipLevel)
+        {
+            var MembershipDetails = await MembershipService.MembershipLevelLength(MembershipLevel);
+            if (MembershipDetails == null)
+            {
+            }
+            return MembershipDetails;
+
+I used this portion in chat GPT. I also used this part as well from ChatGPT.
+
+I just looked up how to put data visual studio from my sql. 
+
+    public class Course
+    {
+        public int CID { get; set; }
+
+        [Required]
+        [StringLength(255)]
+        public string CourseName { get; set; }
+
+        [Required]
+        [StringLength(255)]
+        public int LengthMinutes { get; set; }
+
+        [Required]
+        [StringLength(255)]
+        public string TrainerFirstName { get; set; }
+
+
+        [Required]
+        [StringLength(255)]
+        public string TrainerLastName { get; set; }
+
+
+        [Required]
+        [StringLength(255)]
+        public int Price { get; set; }
+
+
+
+    }
