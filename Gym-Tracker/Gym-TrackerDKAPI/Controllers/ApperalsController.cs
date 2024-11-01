@@ -20,7 +20,7 @@ namespace Gym_TrackerDKAPI.Controllers
             var apperalDetails = await apperalService.ApperalGetAll(apperal_id);
             if (apperalDetails == null)
             {
-                //return NotFound();
+               // return NotFound();
             }
             return apperalDetails;
         
