@@ -43,5 +43,5 @@ end
 
 --Executing procedure 
 
-exec Email_Add @Email='userinput', @Customer_ID=userinput
+exec Customer_Email_Input @Email='userinput', @Customer_ID=userinput
 go 
