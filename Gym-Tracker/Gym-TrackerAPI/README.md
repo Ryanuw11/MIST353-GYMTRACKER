@@ -136,3 +136,42 @@ I just looked up how to put data visual studio from my sql.
 
 
     }
+Davison's Work: 
+I made APIs for a user submitting their email on the website and one for checking the weather (date, temperature, and chance of rain) to prepare for a workout. 
+
+I watched the ecampus videos several times and used ChatGPT. 
+
+ChatGPT help:
+I used it for fixing my code. 
+**Here is the prompt.** 
+
+using Gym_TrackerDWAPI.Data; using Gym_TrackerDWAPI.Entities; using Microsoft.EntityFrameworkCore; namespace Gym_TrackerDWAPI.Repositories { public class WeatherRepository : IWeatherRepository { private readonly DbContextClass _dbContextClass; public WeatherRepository(DbContextClass dbContextClass) { _dbContextClass = dbContextClass; } public async Task<List<WeatherData>> GetWeatherData(DateTime date) { return await _dbContextClass.WeatherData .FromSqlRaw("EXEC GetWeatherData @Date", new SqlParameter("@Date", date)) .ToListAsync(); } } } is this code right ?
+
+
+
+Chatgpt:
+Your WeatherRepository code is almost correct, but there are a couple of points to consider for best practices and ensuring it works as intended:
+Key Points
+Stored Procedure Name: Ensure that the stored procedure GetWeatherData exists in your database and accepts the @Date parameter as intended. If the name is incorrect or the procedure isn't set up correctly, this will result in an error.
+Using SqlParameter: You're using SqlParameter correctly, but make sure you include the necessary namespace:
+csharp
+Copy code
+using Microsoft.Data.SqlClient;
+If you're not already doing so, add this import.
+Error Handling: As mentioned earlier, consider adding error handling (try-catch) to manage any potential exceptions during database calls. This helps with debugging and maintaining your application.
+Empty Result Handling: Depending on your application logic, you might want to handle the case where no results are returned, especially if the date doesn't exist in the database.
+
+
+I no longer have the exact prompt, but it also told me to add this to some of my classes. 
+(using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;)
+
+
+
+
+
+
+
+
+
