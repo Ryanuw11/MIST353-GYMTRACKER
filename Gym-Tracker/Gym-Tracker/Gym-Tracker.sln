@@ -11,6 +11,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gym-TrackerJMAPI", "..\Gym-
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gym-TrackerAPI", "..\Gym-TrackerAPI\Gym-TrackerAPI.csproj", "{C8AA38A0-07EB-42C4-AF92-40C31A67469E}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gym-TrackerDWAPI", "..\Gym-TrackerDWAPI\Gym-TrackerDWAPI.csproj", "{BF7E9FF2-DB71-4396-B671-23B08D7114EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gym-TrackerDWAPI2", "..\Gym-TrackerDWAPI2\Gym-TrackerDWAPI2.csproj", "{1B40FBA4-1BF4-4900-8DAD-7B45624BA71B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{C8AA38A0-07EB-42C4-AF92-40C31A67469E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8AA38A0-07EB-42C4-AF92-40C31A67469E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8AA38A0-07EB-42C4-AF92-40C31A67469E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF7E9FF2-DB71-4396-B671-23B08D7114EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF7E9FF2-DB71-4396-B671-23B08D7114EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF7E9FF2-DB71-4396-B671-23B08D7114EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF7E9FF2-DB71-4396-B671-23B08D7114EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B40FBA4-1BF4-4900-8DAD-7B45624BA71B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B40FBA4-1BF4-4900-8DAD-7B45624BA71B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B40FBA4-1BF4-4900-8DAD-7B45624BA71B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B40FBA4-1BF4-4900-8DAD-7B45624BA71B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

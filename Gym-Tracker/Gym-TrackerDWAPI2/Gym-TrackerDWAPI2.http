@@ -1,0 +1,6 @@
+@Gym_TrackerDWAPI2_HostAddress = http://localhost:5127
+
+GET {{Gym_TrackerDWAPI2_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
