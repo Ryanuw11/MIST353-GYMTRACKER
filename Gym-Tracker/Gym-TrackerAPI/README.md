@@ -7,10 +7,15 @@
 ####The second API is meant to serve as a gym lookup feature which will allow the user to search for a gym by name and view their address and hours of operation. The user will input FITFUSION for example and it will come up with its city and its hours of operation
 
 ####Dalton Knippel's work
+
 #####The first API I decided to go with is one for the user to add an exercise they want to share with the community. The user will have the option to input the intended muscles a workout is going to target, as well as what additional eqiupment is required.
-The user is also going to name the exercise they are sharing. The second API is one for the user to search about an apperal item they want to know the details of. The user just needs the apperal ID number, and they will get the details all about it  and what they are good for. 
+The user is also going to name the exercise they are sharing. 
+
+#####The second API is one for the user to search about an apperal item they want to know the details of. The user just needs the apperal ID number, and they will get the details all about it  and what they are good for. 
+
+
 ########ChatGPT for Exercise and Apperal Classes:
-               ###########################I am converting sql server stored procedures to apis in ASP.NET Core 8. I need to convert this table to a class. Give me the code: CREATE TABLE [dbo].[ext_exercise](
+               I am converting sql server stored procedures to apis in ASP.NET Core 8. I need to convert this table to a class. Give me the code: CREATE TABLE [dbo].[ext_exercise](
 	            [exercise_id] [int] IDENTITY(1,1) NOT NULL,
 	            [exercise_name] [nvarchar](255) NOT NULL,
 	            [exercise_equipment] [nvarchar](255) NULL,
