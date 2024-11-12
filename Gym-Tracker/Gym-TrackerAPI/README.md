@@ -146,8 +146,9 @@ I made APIs for a user submitting their email on the website and one for checkin
 
 I watched the ecampus videos several times and used ChatGPT. 
 
+
 ChatGPT help:
-I used it for fixing my code. 
+I used it for fixing some code. 
 **Here is the prompt.** 
 
 using Gym_TrackerDWAPI.Data; using Gym_TrackerDWAPI.Entities; using Microsoft.EntityFrameworkCore; namespace Gym_TrackerDWAPI.Repositories { public class WeatherRepository : IWeatherRepository { private readonly DbContextClass _dbContextClass; public WeatherRepository(DbContextClass dbContextClass) { _dbContextClass = dbContextClass; } public async Task<List<WeatherData>> GetWeatherData(DateTime date) { return await _dbContextClass.WeatherData .FromSqlRaw("EXEC GetWeatherData @Date", new SqlParameter("@Date", date)) .ToListAsync(); } } } is this code right ?
@@ -171,6 +172,9 @@ I no longer have the exact prompt, but it also told me to add this to some of my
 (using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;)
+
+**ERROR NOTICE**
+Both my APIs have issues. The API for the email input can be constructed wihtout errors, but I believe it has a database issue and can't pull the necessary data once user input has been sent. The API for the weather has one issue with the code that is blocking it fom constructing at all. I plan to fix these issues by the time we screate our razor pages, combining the front and back end. 
 
 
 
