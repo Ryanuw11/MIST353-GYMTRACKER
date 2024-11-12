@@ -1,7 +1,8 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
-namespace GymTrackersAPI.Entities
+// Adding what belongs in membership in sql into the API
+
+namespace Gym_TrackerJMAPI.Entities
 {
     public class Membership
     {
@@ -19,6 +20,6 @@ namespace GymTrackersAPI.Entities
         [StringLength(255)]
         public int MembershipMonthLength { get; set; }
 
-   
+
     }
 }

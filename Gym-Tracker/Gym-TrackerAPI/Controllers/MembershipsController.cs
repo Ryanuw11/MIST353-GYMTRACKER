@@ -1,9 +1,11 @@
-﻿using GymTrackersAPI.Repositiories;
-using Microsoft.AspNetCore.Mvc;
+﻿using Gym_TrackerJMAPI.Entities;
 using GymTrackersAPI.Entities;
-using System.Linq.Expressions;
+using GymTrackersAPI.Repositiories;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 
-namespace GymTrackersAPI.Controllers
+///Creating Membership Controller
+namespace Gym_TrackerJMAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

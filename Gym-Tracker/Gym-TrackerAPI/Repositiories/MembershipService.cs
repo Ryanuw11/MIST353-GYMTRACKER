@@ -1,4 +1,5 @@
-﻿using GymTrackersAPI.Data;
+﻿using Gym_TrackerJMAPI.Entities;
+using GymTrackersAPI.Data;
 using GymTrackersAPI.Entities;
 namespace GymTrackersAPI.Repositiories
 {
