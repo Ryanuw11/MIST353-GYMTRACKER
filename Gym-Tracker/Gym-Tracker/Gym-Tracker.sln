@@ -9,6 +9,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gym-TrackerAPI", "..\Gym-Tr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gym-TrackerDWAPI", "..\Gym-TrackerDWAPI\Gym-TrackerDWAPI.csproj", "{BF7E9FF2-DB71-4396-B671-23B08D7114EC}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gym-TrackerDKAPI", "..\Gym-TrackerDKAPI\Gym-TrackerDKAPI.csproj", "{02A25D0E-E940-48E8-AC8B-A054B2604D87}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gym-TrackerDWAPI2", "..\Gym-TrackerDWAPI2\Gym-TrackerDWAPI2.csproj", "{A2AA565B-413B-4484-8916-8AE135982EC2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gym-TrackerJMAPI", "..\Gym-TrackerJMAPI\Gym-TrackerJMAPI.csproj", "{14B8764A-7AF2-4DB3-81CE-9F6365B3B8CE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GymTrackersAPI", "..\GymTrackersAPI\GymTrackersAPI.csproj", "{A26EEE72-CB8A-45D2-BFB6-2C72F461EBFB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +35,22 @@ Global
 		{BF7E9FF2-DB71-4396-B671-23B08D7114EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF7E9FF2-DB71-4396-B671-23B08D7114EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF7E9FF2-DB71-4396-B671-23B08D7114EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02A25D0E-E940-48E8-AC8B-A054B2604D87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02A25D0E-E940-48E8-AC8B-A054B2604D87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02A25D0E-E940-48E8-AC8B-A054B2604D87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02A25D0E-E940-48E8-AC8B-A054B2604D87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2AA565B-413B-4484-8916-8AE135982EC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2AA565B-413B-4484-8916-8AE135982EC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2AA565B-413B-4484-8916-8AE135982EC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2AA565B-413B-4484-8916-8AE135982EC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14B8764A-7AF2-4DB3-81CE-9F6365B3B8CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14B8764A-7AF2-4DB3-81CE-9F6365B3B8CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14B8764A-7AF2-4DB3-81CE-9F6365B3B8CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14B8764A-7AF2-4DB3-81CE-9F6365B3B8CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A26EEE72-CB8A-45D2-BFB6-2C72F461EBFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A26EEE72-CB8A-45D2-BFB6-2C72F461EBFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A26EEE72-CB8A-45D2-BFB6-2C72F461EBFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A26EEE72-CB8A-45D2-BFB6-2C72F461EBFB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
