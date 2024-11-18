@@ -29,7 +29,7 @@ go
 use GymTrackerDB
 go
 
-create pro Customer_Email_Input
+create proc Customer_Email_Input
     @Email NVARCHAR(255)
 as
 begin
