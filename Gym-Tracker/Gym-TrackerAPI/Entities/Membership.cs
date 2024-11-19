@@ -6,20 +6,12 @@ namespace Gym_TrackerJMAPI.Entities
 {
     public class Membership
     {
-        public int ID { get; set; }
 
-        [Required]
-        [StringLength(255)]
+        public int ID { get; set; }
         public string MembershipLevel { get; set; }
 
-        [Required]
-        [StringLength(255)]
-        public int MembershipMonthPrice { get; set; }
-
-        [Required]
-        [StringLength(255)]
+        public int MembershipMonthPrice {get; set;}
         public int MembershipMonthLength { get; set; }
-
-
     }
 }
+

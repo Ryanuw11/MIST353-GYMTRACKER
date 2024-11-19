@@ -30,18 +30,18 @@ use GymTrackerDB
 go
 
 create proc Customer_Email_Input
-@Email nvarchar(225), @Customer_ID int 
-as 
-begin 
+    @Email NVARCHAR(255)
+as
+begin
+   
+    insert into Customer_Email (Email)
+    values (@Email);
+end;
 
-insert into Customer_Email
-(Email, Customer_ID) 
-values 
-(@Email, @Customer_ID)
 
-end 
+
 
 --Executing procedure 
 
-exec Customer_Email_Input @Email='userinput', @Customer_ID=userinput
+exec Customer_Email_Input @Email='josh.patrick@gmail.com'
 go 
