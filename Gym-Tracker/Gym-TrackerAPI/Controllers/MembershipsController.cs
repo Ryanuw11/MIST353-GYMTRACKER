@@ -5,30 +5,41 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 ///Creating Membership Controller
-namespace Gym_TrackerJMAPI.Controllers
+namespace Gym_TrackerAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
     public class MembershipsController : ControllerBase
     {
-        private readonly IMembershipService MembershipService;
-        public MembershipsController(IMembershipService MembershipService)
+
+        string[] Level = { "Bronze", "Silver", "Gold" };
+
+
+        [HttpGet]
+
+        public IEnumerable<string> FetchSomething()
         {
-            this.MembershipService = MembershipService;
+            return Level;3
         }
         //asks for Membership ID
 
-        [HttpGet("{Membership_ID}")]
-        public async Task<List<Membership>> MembershipLevelLength(string MembershipLevel)
+        [HttpGet("{MembershipID}", Name = "Get")]
+
+        public IActionResult Get(int MembershipID)
         {
-            var MembershipDetails = await MembershipService.MembershipLevelLength(MembershipLevel);
-            if (MembershipDetails == null)
+            if (MembershipID >= 1 && MembershipID <Level.Length)
             {
+                return Ok(Level[MembershipID]);
             }
-            return MembershipDetails;
+            else if (MembershipID > Level.Length)
+            {
+
+                return NotFound("Not valid");
+            }
+            else
+            {
+                return BadRequest("Invalid ID");
+            }
 
 
-        }
-
-    }
-}
+        } }}
