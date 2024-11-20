@@ -21,4 +21,8 @@
     <ProjectReference Include="..\Gym-TrackerAPI\Gym-TrackerAPI.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Pages\Exercise\" />
+  </ItemGroup>
+
 </Project>
