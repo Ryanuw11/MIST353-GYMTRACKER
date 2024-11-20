@@ -19,7 +19,7 @@ namespace Gym_TrackerAPI.Controllers
 
         public IEnumerable<string> FetchSomething()
         {
-            return Level;3
+            return Level;
         }
         //asks for Membership ID
 
