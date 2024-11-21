@@ -22,7 +22,7 @@ end
 --Executing procedure
 
 exec Customer_Name_Input 
-@First_Name='userinput', @Last_Name='userinput'
+@First_Name='John', @Last_Name='Matthews'
 go 
 
 --Creating procedure for email input on the web app. 
