@@ -1,9 +1,9 @@
-﻿using GymTrackersAPI.Entities;
-using GymTrackersAPI.Data;
+﻿using Gym_TrackerAPI.Entities;
+using Gym_TrackerAPI.Data;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 
-namespace GymTrackersAPI.Repositiories;
+namespace Gym_TrackerAPI.Repositiories;
 public class ApperalService : IApperalService
 {
     private readonly DbContextClass _dbContextClass;

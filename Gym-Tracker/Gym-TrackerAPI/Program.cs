@@ -1,7 +1,6 @@
-using GymTrackersAPI.Repositiories;
-using GymTrackersAPI.Data;
+using Gym_TrackerAPI.Repositiories;
+using Gym_TrackerAPI.Data;
 using Microsoft.EntityFrameworkCore;
-using GymTrackersAPI.Repositiories;
 
 var builder = WebApplication.CreateBuilder(args);
 

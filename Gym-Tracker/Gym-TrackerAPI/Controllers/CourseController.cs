@@ -1,10 +1,8 @@
-﻿using Gym_TrackerJMAPI.Entities;
-using GymTrackersAPI.Entities;
-using GymTrackersAPI.Repositiories;
-using Microsoft.AspNetCore.Cors.Infrastructure;
+﻿using Gym_TrackerAPI.Entities;
+using Gym_TrackerAPI.Repositiories;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Gym_TrackerJMAPI.Controllers
+namespace Gym_TrackerAPI.Controllers
 {
 
     [Route("api/[controller]")]

@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace GymTrackersAPI.Entities
+namespace Gym_TrackerAPI.Entities
 {
     public class UserData
     {

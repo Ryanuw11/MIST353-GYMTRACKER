@@ -2,7 +2,7 @@
 
 // Adding what belongs in membership in sql into the API
 
-namespace Gym_TrackerJMAPI.Entities
+namespace Gym_TrackerAPI.Entities
 {
     public class Membership
     {

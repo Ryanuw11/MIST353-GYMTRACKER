@@ -1,10 +1,10 @@
-﻿using GymTrackersAPI.Data;
-using GymTrackersAPI.Entities;
+﻿using Gym_TrackerAPI.Data;
+using Gym_TrackerAPI.Entities;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 
 
-namespace GymTrackersAPI.Repositiories
+namespace Gym_TrackerAPI.Repositiories
 {
     public class GymMenu : IGymMenu
     {

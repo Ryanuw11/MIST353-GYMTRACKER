@@ -1,10 +1,10 @@
-﻿using GymTrackersAPI.Entities;
+﻿using Gym_TrackerAPI.Entities;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 
 
-namespace GymTrackersAPI.Data
+namespace Gym_TrackerAPI.Data
     //class to reference the nullible values from the exercise table
 {
     public partial class ExtExercise

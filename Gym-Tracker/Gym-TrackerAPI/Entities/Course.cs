@@ -2,7 +2,7 @@
 
 // Adding Course information from SQL
 
-namespace Gym_TrackerJMAPI.Entities
+namespace Gym_TrackerAPI.Entities
 {
     public class Course
     {
@@ -28,7 +28,7 @@ namespace Gym_TrackerJMAPI.Entities
 
         [Required]
         [StringLength(255)]
-        public int Price { get; set; }
+        public int ClassPrice { get; set; }
 
 
 

@@ -1,6 +1,6 @@
-﻿using Gym_TrackerJMAPI.Entities;
-using GymTrackersAPI.Entities;
-using GymTrackersAPI.Repositiories;
+﻿using Gym_TrackerAPI.Entities;
+using Gym_TrackerAPI.Entities;
+using Gym_TrackerAPI.Repositiories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 

@@ -1,12 +1,12 @@
-﻿using Gym_TrackerJMAPI.Entities;
-using GymTrackersAPI.Entities;
+﻿using Gym_TrackerAPI.Entities;
+using Gym_TrackerAPI.Entities;
 using Microsoft.EntityFrameworkCore;
 
 
 
 
 
-namespace GymTrackersAPI.Data
+namespace Gym_TrackerAPI.Data
 {
 
     

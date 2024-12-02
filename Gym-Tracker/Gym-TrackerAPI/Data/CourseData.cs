@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 
 
-namespace Gym_TrackerJMAPI.Data
+namespace Gym_TrackerAPI.Data
 {
     //Adding  course data
     public partial class CourseData

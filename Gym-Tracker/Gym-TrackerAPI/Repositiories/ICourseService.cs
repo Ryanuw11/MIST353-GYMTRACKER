@@ -1,7 +1,7 @@
-﻿using Gym_TrackerJMAPI.Entities;
+﻿using Gym_TrackerAPI.Entities;
 //Course Service Interface
 
-namespace GymTrackersAPI.Repositiories
+namespace Gym_TrackerAPI.Repositiories
 {
     public interface ICourseService
     {

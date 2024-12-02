@@ -1,12 +1,12 @@
-﻿using GymTrackersAPI.Data;
-using GymTrackersAPI.Entities;
-using GymTrackersAPI.Repositiories;
+﻿using Gym_TrackerAPI.Data;
+using Gym_TrackerAPI.Entities;
+using Gym_TrackerAPI.Repositiories;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 
 
 
-namespace GymTrackersAPI.Repositiories
+namespace Gym_TrackerAPI.Repositiories
 {
     public interface IExerciseService
     {

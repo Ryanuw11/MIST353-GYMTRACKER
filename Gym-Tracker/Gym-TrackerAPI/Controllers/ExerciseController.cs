@@ -1,10 +1,10 @@
-﻿using GymTrackersAPI.Repositiories;
+﻿using Gym_TrackerAPI.Repositiories;
 using Microsoft.AspNetCore.Mvc;
-using GymTrackersAPI.Entities;
+using Gym_TrackerAPI.Entities;
 using System.Linq.Expressions;
-using GymTrackersAPI.Data;
+using Gym_TrackerAPI.Data;
 
-namespace GymTrackersAPI.Controllers
+namespace Gym_TrackerAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

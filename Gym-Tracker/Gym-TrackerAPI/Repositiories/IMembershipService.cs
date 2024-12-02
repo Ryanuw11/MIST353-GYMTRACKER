@@ -1,6 +1,5 @@
-﻿using Gym_TrackerJMAPI.Entities;
-using GymTrackersAPI.Entities;
-namespace GymTrackersAPI.Repositiories
+﻿using Gym_TrackerAPI.Entities;
+namespace Gym_TrackerAPI.Repositiories
 {
     public interface IMembershipService
     {
