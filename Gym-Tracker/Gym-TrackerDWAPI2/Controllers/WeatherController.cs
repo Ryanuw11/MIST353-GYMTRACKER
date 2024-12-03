@@ -11,22 +11,27 @@ namespace Gym_TrackerDWAPI.Controllers
     [ApiController]
     public class WeatherController : ControllerBase
     {
-        private readonly IWeatherRepository _weatherRepository;
+        private readonly IWeatherRepository weatherRepository;
 
         public WeatherController(IWeatherRepository weatherRepository)
         {
-            _weatherRepository = weatherRepository;
+            this.weatherRepository = weatherRepository;
+        }
+
+        public IWeatherRepository GetWeatherRepository()
+        {
+            return weatherRepository;
         }
 
         [HttpGet("WeatherData")]
-        public async Task<ActionResult<List<WeatherData>>> GetWeatherData(DateTime date)
+        public async Task<ActionResult<List<WeatherData>>> GetWeatherData(DateTime date, IWeatherRepository weatherRepository)
         {
-            var weatherData = await _weatherRepository.GetWeatherData(date);
-            if (weatherData == null )
+           // var weatherData = await weatherRepository.GetWeatherData(date);
+            //if (weatherData == null )
             {
                 return NotFound();
             }
-            return Ok(weatherData);
+          //  return Ok(weatherData);
         }
     }
 }

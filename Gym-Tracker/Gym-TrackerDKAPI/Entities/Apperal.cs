@@ -4,6 +4,7 @@ namespace Gym_TrackerDKAPI.Entities
 {
     public class Apperal
     {
+        [Key]
         public int ApparelId { get; set; }
 
         [Required]
