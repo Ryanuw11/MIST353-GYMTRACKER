@@ -12,11 +12,11 @@ namespace Gym_TrackerAPI.Repositories
     //interface for CourseService
     public class CourseService : ICourseService
     {
-        private readonly CourseData _CourseData;
+        private readonly CourseData CourseData;
 
         public CourseService(CourseData CourseData)
         {
-            _CourseData = CourseData;
+            CourseData = CourseData;
         }
 
         public Task<List<Course>> ClassP(int @ClassPrice)

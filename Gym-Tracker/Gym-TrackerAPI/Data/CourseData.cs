@@ -5,7 +5,7 @@ using System.Collections.Generic;
 namespace Gym_TrackerAPI.Data
 {
     //Adding  course data
-    public partial class CourseData
+    public class CourseData
     {
         public string CourseName { get; set; } = null!;
         public int LengthMinutes { get; set; }

@@ -2,33 +2,35 @@
 using Gym_TrackerAPI.Repositiories;
 using Microsoft.AspNetCore.Mvc;
 
+
 namespace Gym_TrackerAPI.Controllers
 {
-
     [Route("api/[controller]")]
     [ApiController]
-
-    //Adding controller to the Course
     public class CourseController : ControllerBase
     {
-        private readonly ICourseService CourseService;
-        public CourseController(ICourseService CourseService)
-        {
-            this.CourseService = CourseService;
-        }
-        //asks for Class Price
 
-        [HttpGet("{ClassPrice}")]
-        public async Task<List<Course>> ClassP(int ClassPrice)
+        string[] CoursePrice = { "1.99", "2.99", "3", "9.99", "3.99", "4.99", "5.99", "6.99" };
+
+
+        [HttpGet]
+
+        public IEnumerable<string> FetchSomething()
         {
-            var CourseDetails = await CourseService.ClassP(ClassPrice);
-            if (CourseDetails == null)
+            return CoursePrice;
+        }
+        //asks for CoursePrice
+
+        [HttpGet("{courseIndex}")]
+        public IActionResult Get(int courseIndex)
+        {
+            // Validate the index
+            if (courseIndex < 0 || courseIndex >= CoursePrice.Length)
             {
+                return BadRequest("Invalid index");
             }
-            return CourseDetails;
 
-
+            return Ok(CoursePrice[courseIndex]);
         }
-
     }
 }

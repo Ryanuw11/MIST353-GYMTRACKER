@@ -23,15 +23,15 @@ namespace Gym_TrackerAPI.Controllers
         }
         //asks for Membership ID
 
-        [HttpGet("{MembershipID}", Name = "Get")]
+        [HttpGet("{MembershipLevel}", Name = "Get")]
 
-        public IActionResult Get(int MembershipID)
+        public IActionResult Get(int MembershipLevel)
         {
-            if (MembershipID >= 1 && MembershipID <Level.Length)
+            if (MembershipLevel >= 1 && MembershipLevel < Level.Length)
             {
-                return Ok(Level[MembershipID]);
+                return Ok(Level[MembershipLevel]);
             }
-            else if (MembershipID > Level.Length)
+            else if (MembershipLevel > Level.Length)
             {
 
                 return NotFound("Not valid");
