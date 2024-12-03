@@ -8,6 +8,7 @@ namespace Gym_TrackerDWAPI.Repositories
     public interface IWeatherRepository
     {
         Task<List<WeatherData>> GetWeather(DateTime date);
+        Task GetWeatherData(DateTime date);
     }
 }
 

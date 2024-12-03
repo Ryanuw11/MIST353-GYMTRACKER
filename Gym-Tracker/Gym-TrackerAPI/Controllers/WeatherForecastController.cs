@@ -1,3 +1,4 @@
+using Gym_TrackerDKAPI;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GymTrackersAPI.Controllers

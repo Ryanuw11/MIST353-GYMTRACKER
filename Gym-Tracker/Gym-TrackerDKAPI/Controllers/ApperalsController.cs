@@ -1,4 +1,5 @@
-﻿using Gym_TrackerDKAPI.Entities;
+﻿using Gym_TrackerDKAPI.Data;
+using Gym_TrackerDKAPI.Entities;
 using Gym_TrackerDKAPI.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using System.Linq.Expressions;
@@ -7,25 +8,30 @@ namespace Gym_TrackerDKAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ApperalsController : Controller
+    public class ApperalsController : ControllerBase
     {
-        private readonly IApperalService apperalService;
+        private readonly IApperalService ApperalService;
         public ApperalsController(IApperalService apperalService)
         {
-            this.apperalService = apperalService;
+            this.ApperalService = apperalService;
         }
-        [HttpGet("{Apperal_id}")]
-        public async Task<List<Apperal>> ApperalGetAll(int apperal_id)
+        [HttpGet("ApperalGetAll")]
+        public async Task<IEnumerable<ExtApperal>> ApperalGetAll(int Apperal_id)
         {
-            var apperalDetails = await apperalService.ApperalGetAll(apperal_id);
-            if (apperalDetails == null)
+            try
             {
-               // return NotFound();
+                var response = await ApperalService.ApperalGetAll(Apperal_id);
+                if (response == null)
+                {
+                    return null;
+                }
+                return response;
             }
-            return apperalDetails;
-        
-    
-    }
-
+            catch
+            {
+                throw;
+            }
+        }
     }
 }
+
