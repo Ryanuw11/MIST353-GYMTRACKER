@@ -4,7 +4,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>Gym_TrackerAPI</RootNamespace>
+    <RootNamespace>Gym-TrackerAPI</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -16,15 +16,6 @@
     <PackageReference Include="Microsoft.SqlServer.Server" Version="1.0.0" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.7" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Pages\Membership\" />
-    <Folder Include="Pages\Course\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\Gym-TrackerDKAPI\Gym-TrackerDKAPI.csproj" />
   </ItemGroup>
 
 </Project>
