@@ -1,6 +1,6 @@
+using Gym_Tracker.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Gym_Tracker.Data;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.

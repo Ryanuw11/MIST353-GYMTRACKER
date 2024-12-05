@@ -1,9 +1,6 @@
 ﻿using Gym_TrackerAPI.Data;
 using Gym_TrackerAPI.Entities;
 using Gym_TrackerAPI.Repositiories;
-using Microsoft.AspNetCore.Cors.Infrastructure;
-using Microsoft.EntityFrameworkCore;
-using System.Data.SqlClient;
 
 //Adding class price to the API
 

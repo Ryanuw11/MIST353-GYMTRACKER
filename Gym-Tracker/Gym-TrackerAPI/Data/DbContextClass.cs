@@ -1,15 +1,11 @@
 ﻿using Gym_TrackerAPI.Entities;
-using Gym_TrackerAPI.Entities;
 using Microsoft.EntityFrameworkCore;
-
-
-
 
 
 namespace Gym_TrackerAPI.Data
 {
 
-    
+
     public class DbContextClass : DbContext
     {
         //the following code inputs the db data for everyones individual enitiy classes
@@ -23,6 +19,6 @@ namespace Gym_TrackerAPI.Data
         public DbSet<Exercise> Exercise { get; set; }
         public DbSet<Membership> Membership { get; set; }
 
-
+ 
     }
 }

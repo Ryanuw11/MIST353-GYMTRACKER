@@ -1,4 +1,3 @@
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace Gym_Tracker.Pages
@@ -12,7 +11,7 @@ namespace Gym_Tracker.Pages
         {
             _clientFactory = clientFactory;
         }
-       
+
 
     }
 }

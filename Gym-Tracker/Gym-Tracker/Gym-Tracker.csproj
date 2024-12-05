@@ -26,5 +26,9 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.7" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Gym-TrackerAPI\Gym-TrackerAPI.csproj" />
+  </ItemGroup>
+
 
 </Project>

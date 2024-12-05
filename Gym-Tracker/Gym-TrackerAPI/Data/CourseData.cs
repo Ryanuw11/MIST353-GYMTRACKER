@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-
-namespace Gym_TrackerAPI.Data
+﻿namespace Gym_TrackerAPI.Data
 {
     //Adding  course data
     public class CourseData

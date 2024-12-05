@@ -1,5 +1,5 @@
-﻿using Gym_TrackerAPI.Entities;
-using Gym_TrackerAPI.Data;
+﻿using Gym_TrackerAPI.Data;
+using Gym_TrackerAPI.Entities;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 

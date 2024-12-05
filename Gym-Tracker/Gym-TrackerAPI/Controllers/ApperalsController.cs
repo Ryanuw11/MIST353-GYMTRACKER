@@ -1,7 +1,6 @@
-﻿using Gym_TrackerAPI.Repositiories;
+﻿using Gym_TrackerAPI.Entities;
+using Gym_TrackerAPI.Repositiories;
 using Microsoft.AspNetCore.Mvc;
-using Gym_TrackerAPI.Entities;
-using System.Linq.Expressions;
 
 namespace Gym_TrackerAPI.Controllers
 {
@@ -20,12 +19,12 @@ namespace Gym_TrackerAPI.Controllers
             var apperalDetails = await apperalService.ApperalGetAll(apperal_id);
             if (apperalDetails == null)
             {
-               // return NotFound();
+                // return NotFound();
             }
             return apperalDetails;
-        
-    
-    }
+
+
+        }
 
     }
 }

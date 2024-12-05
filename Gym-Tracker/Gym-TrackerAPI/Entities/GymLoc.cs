@@ -1,11 +1,11 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Gym_TrackerAPI.Entities
 {
     public class GymLoc
     {
-        [Key]  
+        [Key]
         [Column("id")]
         public int Id { get; set; }
 
@@ -16,9 +16,9 @@ namespace Gym_TrackerAPI.Entities
         public string? GymCity { get; set; }
 
         [Column("open_time")]
-        public TimeSpan? OpenTime { get; set; } 
+        public TimeSpan? OpenTime { get; set; }
 
         [Column("close_time")]
-        public TimeSpan? CloseTime { get; set; } 
+        public TimeSpan? CloseTime { get; set; }
     }
 }

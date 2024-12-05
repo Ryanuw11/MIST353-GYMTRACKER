@@ -1,8 +1,6 @@
-﻿using Gym_TrackerAPI.Repositiories;
+﻿using Gym_TrackerAPI.Data;
+using Gym_TrackerAPI.Repositiories;
 using Microsoft.AspNetCore.Mvc;
-using Gym_TrackerAPI.Entities;
-using System.Linq.Expressions;
-using Gym_TrackerAPI.Data;
 
 namespace Gym_TrackerAPI.Controllers
 {

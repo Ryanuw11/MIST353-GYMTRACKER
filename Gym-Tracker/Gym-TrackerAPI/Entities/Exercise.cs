@@ -1,5 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace Gym_TrackerAPI.Entities
 //see README for ChatGPT prompt. Converting MySQL to asp.net

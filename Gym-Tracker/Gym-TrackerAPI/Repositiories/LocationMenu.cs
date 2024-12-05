@@ -1,6 +1,5 @@
 ﻿using Gym_TrackerAPI.Data;
 using Gym_TrackerAPI.Entities;
-using Gym_TrackerAPI.Repositiories;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 
@@ -22,7 +21,7 @@ namespace Gym_TrackerAPI.Repositiories
             var param = new SqlParameter("@gym_name", gym_name);
             var gymLocations = await _dbContextClass.GymLoc.FromSqlRaw("exec spGymLocAndOpen @gym_name", param).ToListAsync();
 
-            
+
             return gymLocations;
         }
     }
