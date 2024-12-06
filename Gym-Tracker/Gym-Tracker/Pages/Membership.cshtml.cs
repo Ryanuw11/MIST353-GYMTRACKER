@@ -1,45 +1,78 @@
-using Gym_TrackerAPI.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using System.Text.Json;
+using Gym_Tracker.Data;
+using Gym_TrackerAPI.Entities;
+using Microsoft.EntityFrameworkCore;
+using System.Text.Json; // Your DbContext namespace
 
 
 
-public class MembershipModel : PageModel
+namespace Gym_Tracker.Pages
 {
-    private readonly HttpClient _httpClient;
 
-    public MembershipModel(HttpClient httpClient)
+    public class MembershipLevelModel : PageModel
     {
-        _httpClient = httpClient;
-    }
+        private readonly HttpClient _httpClient;
 
-    public IList<Gym_TrackerAPI.Data.MembershipData> MembershipList { get; set; } = new List<MembershipData>();
 
-    public async Task<IActionResult> OnGetAsync(int ID)
-    {
-        try
+        public MembershipLevelModel(HttpClient httpClient)
         {
-            var response = await _httpClient.GetAsync($"https://localhost:7219/api/Memberships/1\r\n{ID}");
+            _httpClient = httpClient;
+        }
 
-            if (response.IsSuccessStatusCode)
+
+        public IList<Membership> MembershipList { get; set; } = new List<Membership>();
+
+        public async Task<IActionResult> OnGetAsync(string MembershipLevel)
+        {
+            if (string.IsNullOrEmpty(MembershipLevel))
             {
-                var responseContent = await response.Content.ReadAsStringAsync();
-                MembershipList = JsonSerializer.Deserialize<List<MembershipData>>(responseContent);
-
+                ModelState.AddModelError("", "Enter a valid Membership Level");
                 return Page();
             }
-            else
-            {
-                TempData["Did not load data"] = "Didnt load membership data.";
 
-                return RedirectToPage("Error");
+            try
+            {
+                string apiUrl = $"https://localhost:7219/api/Memberships/{MembershipLevel}";
+                var response = await _httpClient.GetAsync(apiUrl);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var jsonResponse = await response.Content.ReadAsStringAsync();
+                    Console.WriteLine("API Response: " + jsonResponse);
+                    if (string.IsNullOrEmpty(jsonResponse))
+                    {
+                        Console.WriteLine("API response is empty.");
+                    }
+
+
+                    var Level = JsonSerializer.Deserialize<List<Membership>>(jsonResponse, new JsonSerializerOptions
+                    {
+                        PropertyNameCaseInsensitive = true
+                    });
+
+                    if (Level != null && Level.Any())
+                    {
+                        MembershipList = Level;
+                    }
+                    else
+                    {
+                        MembershipList = new List<Membership>();
+                    }
+                }
+                else
+                {
+                    MembershipList = new List<Membership>();
+                }
             }
-        }
-        catch (Exception ex)
-        {
-            TempData["ErrorMessage"] = $"Error: {ex.Message}";
-            return RedirectToPage("Error");
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Exception occurred: {ex.Message}");
+                ModelState.AddModelError("", $"An error occurred: {ex.Message}");
+            }
+
+            return Page();
         }
     }
+
 }

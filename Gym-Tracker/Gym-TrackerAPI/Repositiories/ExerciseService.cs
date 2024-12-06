@@ -6,9 +6,9 @@ namespace Gym_TrackerAPI.Repositiories
 {
     public class ExerciseService : IExerciseService
     {
-        private readonly DbContextClass _dbContext;
+        private readonly ApplicationDbContext _dbContext;
         //this is a method for the user to input the name,equipment, and muscletarget of a new exercise they wish to input
-        public ExerciseService(DbContextClass dbContext)
+        public ExerciseService(ApplicationDbContext dbContext)
         {
             _dbContext = dbContext;
         }

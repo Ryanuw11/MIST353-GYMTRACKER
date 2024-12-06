@@ -1,19 +1,19 @@
 ﻿@page
-@model Gym_Tracker.Pages.searchResultsModel
-@{
-    var userId = HttpContext.Request.Query["user"];
-    var userEmail = HttpContext.Request.Query["email"];
-}   
-   
+@using Gym_TrackerAPI.Entities
+@model Gym_Tracker.Pages.SearchResultsModel
 
-    
+<h2>Search Results</h2>
+
+@if (Model.MembershipList != null && Model.MembershipList.Any())
+{
+    <ul>
+        @foreach (var membership in Model.MembershipList)
+        {
+            <li>@membership.ID - @membership.MembershipLevel</li>
+        }
+    </ul>
 }
-<h1>Search Results</h1>
-@Html.Raw(Model.JsonData)
-<div id="UserName" style="visibility: visible;">
-
-</div>
-
-<script type="module">
-    displaySearchResults(@userId, @userEmail);
-</script>
+else
+{
+    <p>No results found for your search.</p>
+}

@@ -8,8 +8,8 @@ namespace Gym_TrackerAPI.Repositiories
 {
     public class GymMenu : IGymMenu
     {
-        private readonly DbContextClass _dbContextClass;
-        public GymMenu(DbContextClass dbContextClass)
+        private readonly ApplicationDbContext _dbContextClass;
+        public GymMenu(ApplicationDbContext dbContextClass)
         {
             _dbContextClass = dbContextClass;
         }

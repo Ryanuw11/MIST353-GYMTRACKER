@@ -8,7 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddScoped<IGymMenu, GymMenu>();
 builder.Services.AddScoped<ILocationMenu, LocationMenu>();
 
-builder.Services.AddDbContext<DbContextClass>(options =>
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddControllers();

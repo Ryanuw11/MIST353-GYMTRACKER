@@ -6,11 +6,9 @@ namespace Gym_TrackerAPI.Repositiories
     //interface for MembershipService
     public class MembershipService : IMembershipService
     {
-        private readonly DbContextClass _dbContextClass;
 
-        public MembershipService(DbContextClass dbContextClass)
+        public MembershipService(ApplicationDbContext dbContextClass)
         {
-            _dbContextClass = dbContextClass;
         }
 
         public Task<List<Membership>> MembershipLevelLength(int Membership_ID)

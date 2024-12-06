@@ -6,8 +6,8 @@ using Microsoft.EntityFrameworkCore;
 namespace Gym_TrackerAPI.Repositiories;
 public class ApperalService : IApperalService
 {
-    private readonly DbContextClass _dbContextClass;
-    public ApperalService(DbContextClass dbContextClass)
+    private readonly ApplicationDbContext _dbContextClass;
+    public ApperalService(ApplicationDbContext dbContextClass)
     {
         _dbContextClass = dbContextClass;
     }

@@ -5,6 +5,8 @@ namespace Gym_Tracker.Data
 {
     public class ApplicationDbContext : IdentityDbContext
     {
+        internal readonly IEnumerable<object> Memberships;
+
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
